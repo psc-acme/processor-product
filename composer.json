@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/processor-product",
+    "description": "Package processor-product for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ProcessorProduct\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/process": "^7.0",
+        "symfony/http-foundation": "^7.0",
+        "symfony/serializer": "^7.0",
+        "symfony/yaml": "^7.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.0",
+        "phpunit/phpunit": "^11.0",
+        "phpstan/phpstan-symfony": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
